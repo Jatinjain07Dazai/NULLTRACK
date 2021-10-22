@@ -45,6 +45,9 @@ export default function Index({navigation})
    style={styles.back}
    resizeMode={'stretch'}
    blurRadius={0}/>
+    
+    <Image source={require( './image/t.png')}
+      style={styles.round} />
      
    <SafeAreaView style={styles.border}>
    <TextInput placeholder="Username" maxLength={30} onChangeText={TexthandlerU} />
@@ -100,8 +103,8 @@ const styles = StyleSheet.create({
    container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    //alignItems: 'center',
+    //justifyContent: 'center',
   },
   
    back:{
@@ -118,6 +121,13 @@ const styles = StyleSheet.create({
     marginTop:20,
     marginLeft:w*.10,
     alignItems:'center',
+  },
+  round:{
+    height:120,
+    width:120,
+    borderRadius:200,
+    marginLeft:w *.30,
+    marginTop:h*.10,
   }
   });
 
