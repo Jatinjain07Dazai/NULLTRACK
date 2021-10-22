@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
 import { StyleSheet, Text, SafeAreaView, TextInput, Button, Image, Keyboard, TouchableWithoutFeedback, Alert, Dimensions, KeyboardAvoidingView} from 'react-native';
+import Snow from 'react-native-snow-bg';
 export default function Index({navigation})
 {
  
@@ -46,6 +47,8 @@ export default function Index({navigation})
    resizeMode={'stretch'}
    blurRadius={0}/>
     
+     <Snow fullScreen snowflakesCount={100} fallSpeed="high" />
+      
     <Image source={require( './image/t.png')}
       style={styles.round} />
     
