@@ -21,6 +21,24 @@ return(
 	</TouchableOpacity>
 	<Text style={styles.headertext}>Locate</Text>
 	</SafeAreaView>	
+
+
+
+	<SafeAreaView style={styles.card}>
+	<View style={{alignItems:'center',}}>
+		<Text style={{color:"red", fontSize:40,}}>Coordinates:</Text>
+	</View>
+	<View style={{alignItems:'row',}}>
+		<Text style={{color:"green", fontSize:30,}}>Latitude::</Text>
+	</View>
+	<View style={{alignItems:'row',}}>
+		<Text style={{color:"green", fontSize:30,}}>Longitude::</Text>
+	</View>
+	</SafeAreaView>
+
+
+	
+
 	
 	<SafeAreaView style={styles.home}>
 	<Text><TouchableOpacity onPress={()=>navbar(1)}><AntDesign name="home" size={60} color="#1e90ff" /></TouchableOpacity></Text>
@@ -99,4 +117,18 @@ const styles= StyleSheet.create({
   	backgroundColor:"#fff",
   	borderColor:"#edece1",
   },
+	
+   card:{
+  	marginLeft:20,
+  	marginTop:40,
+  	height:Dimensions.get('window').height -350,
+  	width:Dimensions.get('window').width - 40,
+  	borderWidth:8,
+  	borderColor:"#F5F5F5",
+  	alignItems:'center',
+  	backgroundColor:"#fff",
+  	borderRadius:24,
+
+  },
+
   });
