@@ -16,7 +16,7 @@ export default function Index({navigation})
     setpass(val);
   }
   
-  function SubmitHandler(){
+  function Submit(){
     if(uname==real.username && pass==real.password){
       // Alert.alert('Welcome', 'We hope you like our service ♥', [{text:'Ok'}],);
       console.log('Autheticate get in');
@@ -56,6 +56,16 @@ export default function Index({navigation})
    <SafeAreaView style={styles.border}>
    <TextInput placeholder="Password" maxLength={30} keyboardType='default' onChangeText={TexthandlerP} secureTextEntry={true} />
    </SafeAreaView>
+   
+ 
+   <SafeAreaView style={styles.butt}>
+   <Button title='Log In' color='#ff5c5c' onPress={Submit} />
+   </SafeAreaView>
+
+   
+
+
+
 
 
   </SafeAreaView>
@@ -128,7 +138,15 @@ const styles = StyleSheet.create({
     borderRadius:200,
     marginLeft:w *.30,
     marginTop:h*.10,
+  },
+  
+ butt:{
+    height:40,
+    width:120,
+    marginLeft:w*.33,
+    marginTop:30,
   }
+
   });
 
 
