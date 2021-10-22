@@ -15,4 +15,8 @@ Git repository for void hack() of svvv
 
 ### 4. Siddhart Sharma
 
+##  FRAMEWORK:-
 
+1. Node.js
+2. react native
+3. python
