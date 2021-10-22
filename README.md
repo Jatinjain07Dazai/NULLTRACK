@@ -6,4 +6,5 @@ Git repository for void hack() of svvv
 Fintech
 ## Members:
 Siddhant Jain
-SHIVVAY 
+SHIVVAY MISHRA
+
