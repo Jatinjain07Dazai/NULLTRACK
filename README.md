@@ -13,7 +13,7 @@ Git repository for void hack() of svvv
 
 ### 3. Shivay Mishra
 
-### 4. Siddhart Sharma
+### 4. Siddharth Sharma
 
 ##  FRAMEWORK:-
 
