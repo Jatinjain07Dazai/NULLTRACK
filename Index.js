@@ -69,7 +69,7 @@ export default function Index({navigation})
    <Button title='Log In' color='#ff5c5c' onPress={Submit} />
    </SafeAreaView>
 
-   <Text style={styles.new}>New here sign up its free ?</Text>
+   <Text style={styles.new}>New here ?,  Sign up its free </Text>
 
     <SafeAreaView style={styles.butt}>
    <Button title='Sign Up' color='#00a86b' onPress={Submit} />
@@ -179,9 +179,9 @@ const styles = StyleSheet.create({
    marginBottom:20,
   },
   new:{
-    color:'blue',
-    marginTop:8,
-    marginLeft:w*.28,
+    color:'#00ffff',
+    marginTop:20,
+    marginLeft:w*.26,
   }
  
 
