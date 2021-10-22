@@ -41,7 +41,7 @@ export default function Index({navigation})
       <StatusBar style="auto" />
         
   <Image
-   source={require('./images/back.png')}
+   source={require('./image/back.png')}
    style={styles.back}
    resizeMode={'stretch'}
    blurRadius={0}/>
