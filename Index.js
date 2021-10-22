@@ -48,6 +48,13 @@ export default function Index({navigation})
     
     <Image source={require( './image/t.png')}
       style={styles.round} />
+    
+   
+    <SafeAreaView>
+    <Text style={styles.banner} >WELCOME,</Text>
+    </SafeAreaView>
+
+    <Text style={styles.subtext}>We track your untracable transactions :) !</Text>
      
    <SafeAreaView style={styles.border}>
    <TextInput placeholder="Username" maxLength={30} onChangeText={TexthandlerU} />
@@ -137,7 +144,7 @@ const styles = StyleSheet.create({
     width:120,
     borderRadius:200,
     marginLeft:w *.30,
-    marginTop:h*.10,
+    marginTop:h*.04,
   },
   
  butt:{
@@ -145,7 +152,27 @@ const styles = StyleSheet.create({
     width:120,
     marginLeft:w*.33,
     marginTop:30,
-  }
+  },
+ 
+ banner:{
+    color:'#fff',
+    fontSize:60,
+    fontWeight:'bold',
+    marginTop: 40,
+    paddingHorizontal: 30,
+    alignItems:'center',
+    width:w,
+  },
+  subtext:{
+    color:'#fff',
+    width:280,
+    borderRadius:60,
+    paddingHorizontal:20,
+    marginTop:2,
+    marginLeft:160,
+   marginBottom:20,
+  },
+ 
 
   });
 
