@@ -8,7 +8,7 @@ export default function Closelist(){
       {name:'William DANE', number:'0001010011', key:'2'},
       {name:'Rick SCCHEZ', number:'0001010011', key:'3'},
       {name:'Doctor DOOM ', number:'0001010011', key:'4'},
-      {name:'Harry Hofs', number:'0001010011', key:'5'}
+      {name:'Scarlet Hofs', number:'0001010011', key:'5'}
       ]);
 
 	function deleteF(key){
