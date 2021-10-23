@@ -21,15 +21,22 @@ export default function Index({navigation})
     if(uname==real.username && pass==real.password){
       // Alert.alert('Welcome', 'We hope you like our service ♥', [{text:'Ok'}],);
       console.log('Autheticate get in');
-     navigation.navigate('Home');
+       navigation.navigate('Home');
     }
     else{
       Alert.alert('Authetication Failed', 
-        'It seems you username or Password is incorrect', 
+        'It seems you username or password is incorrect', 
         [{text:"Forget password", onPress:()=> console.log("This feature is under produnction")},
         {text:"retry", onPress:()=> console.log("okie dokie !!!!!!")}]);
     }
 
+  }
+
+
+  function SubmitS(){
+    Alert.alert('Oops !!!!!', 
+        'This feature is under maintainance, Sorry for inconvence', 
+        [{text:"Ok", onPress:()=> console.log("This feature is under produnction")}]);
   }
   
   return(
@@ -47,9 +54,9 @@ export default function Index({navigation})
    style={styles.back}
    resizeMode={'stretch'}
    blurRadius={0}/>
+
+    <Snow fullScreen snowflakesCount={100} fallSpeed="high" />
     
-     <Snow fullScreen snowflakesCount={100} fallSpeed="high" />
-      
     <Image source={require( './image/t.png')}
       style={styles.round} />
     
@@ -61,7 +68,7 @@ export default function Index({navigation})
     <Text style={styles.subtext}>We track your untracable transactions :) !</Text>
      
    <SafeAreaView style={styles.border}>
-   <TextInput placeholder="Username" maxLength={30} onChangeText={TexthandlerU} />
+   <TextInput placeholder="Username" maxLength={30} color="#fff" onChangeText={TexthandlerU} />
    </SafeAreaView>
 
    <SafeAreaView style={styles.border}>
@@ -76,7 +83,7 @@ export default function Index({navigation})
    <Text style={styles.new}>New here ?,  Sign up its free </Text>
 
     <SafeAreaView style={styles.butt}>
-   <Button title='Sign Up' color='#00a86b' onPress={Submit} />
+   <Button title='Sign Up' color='#00a86b' onPress={SubmitS} />
    </SafeAreaView>
 
    
@@ -146,14 +153,14 @@ const styles = StyleSheet.create({
     height:40,
     width:280,
     marginTop:20,
-    marginLeft:w*.10,
+    marginLeft:w*.14,
     alignItems:'center',
   },
   round:{
     height:120,
     width:120,
     borderRadius:200,
-    marginLeft:w *.30,
+    marginLeft:w *.33,
     marginTop:h*.04,
   },
   
@@ -169,7 +176,7 @@ const styles = StyleSheet.create({
     fontSize:60,
     fontWeight:'bold',
     marginTop: 40,
-    paddingHorizontal: 30,
+    paddingHorizontal: 33,
     alignItems:'center',
     width:w,
   },
@@ -177,7 +184,7 @@ const styles = StyleSheet.create({
     color:'#fff',
     width:280,
     borderRadius:60,
-    paddingHorizontal:20,
+    paddingHorizontal:23,
     marginTop:2,
     marginLeft:160,
    marginBottom:20,
@@ -190,8 +197,5 @@ const styles = StyleSheet.create({
  
 
   });
-
-
-
 
 
