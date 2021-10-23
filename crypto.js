@@ -30,7 +30,7 @@ return(
 	<ImageBackground source={require('./image/crypto.jpg')} style={styles.container}>
 	<SafeAreaView style={styles.header}>
 	<FontAwesome5 name="bitcoin" size={60} color="black" />
-	<Text style={{fontSize:40, color:'#FFCC66', fontWeight:'bold',}}> Crypto Market</Text>
+	<Text style={{fontSize:40 , color:'#FFCC66', fontWeight:'bold',}}> Crypto Market</Text>
 	</SafeAreaView>
 
 
