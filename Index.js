@@ -21,6 +21,7 @@ export default function Index({navigation})
     if(uname==real.username && pass==real.password){
       // Alert.alert('Welcome', 'We hope you like our service ♥', [{text:'Ok'}],);
       console.log('Autheticate get in');
+     navigation.navigate('Home');
     }
     else{
       Alert.alert('Authetication Failed', 
