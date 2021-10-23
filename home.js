@@ -3,6 +3,7 @@ import { StyleSheet, Text, SafeAreaView, View, ImageBackground, TouchableOpacity
 import { SimpleLineIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 
 
 
@@ -14,6 +15,10 @@ export default function Home({navigation}){
 	function gotomarket(){
 		navigation.navigate('cryptomrk');
 	}
+	function exit(){
+		navigation.navigate('index');
+	}
+
 
 
 
@@ -55,7 +60,7 @@ return(
 	<Text><TouchableOpacity style={styles.tabelem}><AntDesign name="wallet" size={40} color="#1e90ff" /><Text style={{color:'#1e90ff',}}>T-Wallet</Text></TouchableOpacity></Text>
 	<Text style={{color:'#1e90ff',}}>HOME</Text>
 	<Text><TouchableOpacity style={styles.tabelem} onPress={gotocontact}><AntDesign name="contacts" size={40} color="#1e90ff" /><Text style={{color:'#1e90ff',}}>Contact</Text></TouchableOpacity></Text>
-	<Text><TouchableOpacity style={styles.tabelem}><AntDesign name="setting" size={40} color="#1e90ff" /><Text style={{color:'#1e90ff',}}>Settings</Text></TouchableOpacity></Text>
+	<Text><TouchableOpacity style={styles.tabelem}><Ionicons name="log-out-outline" size={40} color="#1e90ff" /><Text style={{color:'#1e90ff',}}>Log Out</Text></TouchableOpacity></Text>
 	
 	</View>
 	</SafeAreaView>
