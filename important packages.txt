@@ -1,0 +1,17 @@
+
+done:-
+react-navigation-drawer
+react-navigation-stack
+react-native-reanimated
+react-native-snow-bg
+react-navigation
+react-native-gesture-handler
+react-native-safe-area-context
+
+
+
+DEPENDENCIES:--
+
+##1 npm install react-navigation-stack react-native-reanimated react-native-snow-bg react-navigation react-native-gesture-handler react-native-safe-area-context
+##2 expo install expo-location
+##3 expo install expo-network
