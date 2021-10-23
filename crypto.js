@@ -45,10 +45,10 @@ return(
 			<ImageBackground source={require('./image/tbutt.png')} style={styles.listitem}>
 			<Text style={styles.name}>{item.name}</Text>
 			<TouchableOpacity activeOpacity={0.2} style={styles.icon}>
-				<Text>Buy</Text>
+				<Text style={{fontSize:30, color:'green', fontWeight:'bold',}}>Buy</Text>
 			</TouchableOpacity>
 			<TouchableOpacity style={styles.icon2}>	
-				<Text>Sell</Text>
+				<Text style={{fontSize:30, color:'red', fontWeight:'bold',}}>Sell</Text>
 			</TouchableOpacity>
 			</ImageBackground>
 			</View>
@@ -150,7 +150,7 @@ const styles= StyleSheet.create({
 			fontWeight:'bold',
 			color:"#fff",
 			marginTop:15,
-			flex:4,
+			flex:3,
 		},
 
 	number:{
