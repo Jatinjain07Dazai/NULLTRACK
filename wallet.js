@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { StyleSheet, Text, SafeAreaView, View, ImageBackground, TouchableOpacity, Dimensions, Image} from 'react-native';
-
+import { FontAwesome5 } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
 
 
 export default function Wallet({navigation}){
@@ -16,7 +17,7 @@ return(
 	<Text style={styles.subtext1}>Hi,</Text>
 	</SafeAreaView>
 	<SafeAreaView style={{width:140, marginLeft:170, marginTop:0, borderBottomWidth:3, borderBottomColor:'yellow', justifyContent:'center',}}>
-	<Text style={styles.subtext2}>Peanut</Text>
+	<Text style={styles.subtext2}>JEFFERY</Text>
 	</SafeAreaView>
 	<SafeAreaView style={{flexDirection:'row', justifyContent:'center', marginTop:25,}}>
 	<Text style={{fontSize:30, fontWeight:'bold', color:'#ff2400',}}>BALANCE :</Text>
@@ -25,10 +26,14 @@ return(
 
 	<SafeAreaView style={styles.card}>
 	<ImageBackground source={require('./image/cross.jpg')} style={styles.img}>
-	<Text>Withdraw</Text>
-	<Text> Add Money</Text>
-	<Text> Change Pin</Text>
-	<Text>Request</Text>
+	<View style={{justifyContent:'space-around',}}>
+	<View style={styles.sqr}><TouchableOpacity style={{alignItems:'center', justifyContent:'center', alignItems:'center',}}><FontAwesome5 name="money-bill-alt" size={80} color="green" /><Text style={{color:'green', fontWeight:'bold', fontSize:20,}}>WITHDRAW CASH</Text></TouchableOpacity></View>
+	<View style={styles.sqr}><TouchableOpacity style={{alignItems:'center', justifyContent:'center', alignItems:'center',}}><MaterialIcons name="local-atm" size={80} color="blue" /><Text style={{color:'blue', fontWeight:'bold', fontSize:20,}}>Change Pin </Text></TouchableOpacity></View>
+	</View>
+	<View style={{justifyContent:'space-around',}}>
+	<View style={styles.sqr}><TouchableOpacity style={{alignItems:'center', justifyContent:'center', alignItems:'center',}}><FontAwesome5 name="money-bill-alt" size={80} color="green" /><Text style={{color:'green', fontWeight:'bold', fontSize:20,}}>WITHDRAW CASH</Text></TouchableOpacity></View>
+	<View style={styles.sqr}><TouchableOpacity style={{alignItems:'center', justifyContent:'center', alignItems:'center',}}><FontAwesome5 name="money-bill-alt" size={80} color="green" /><Text style={{color:'green', fontWeight:'bold', fontSize:20,}}>WITHDRAW CASH</Text></TouchableOpacity></View>
+	</View>
 	</ImageBackground>
 	</SafeAreaView>
 
@@ -83,12 +88,16 @@ const styles= StyleSheet.create({
   	borderColor:"#CCCCCC",
   	overflow:'hidden',
   	position:'absolute',
-  	flexDirection:'row',
+  	flexDirection:'column',
   },
 
   img:{
   	height:h/2,
   	width:w,
+  	overflow:'hidden',
+  	flexDirection:'row',
+  	justifyContent:'space-around'
+
   },
 
   headerback:{
@@ -96,6 +105,12 @@ const styles= StyleSheet.create({
   	justifyContent:'center',
   	marginTop:h*.04,
 
+  },
+
+  sqr:{
+  	height:h/4 -20,
+  	width:h/4 -20,
+  	backgroundColor:'#EFC050',
   }
 
 
