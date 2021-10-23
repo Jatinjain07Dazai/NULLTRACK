@@ -11,6 +11,10 @@ export default function Home({navigation}){
 	function gotocontact(){
 	navigation.navigate('closelist');
 	}
+	function gotomarket(){
+		navigation.navigate('cryptomrk');
+	}
+
 
 
 
@@ -47,7 +51,7 @@ return(
 	</SafeAreaView>
 	<SafeAreaView style={styles.footab}>
 	<View style={styles.tab}>
-	<Text><TouchableOpacity style={styles.tabelem}><FontAwesome name="bitcoin" size={40} color="#FFCC66" /><Text style={{color:'#1e90ff',}}>Crypto</Text></TouchableOpacity></Text>
+	<Text><TouchableOpacity style={styles.tabelem} onPress={gotomarket}><FontAwesome name="bitcoin" size={40} color="#FFCC66" /><Text style={{color:'#1e90ff',}}>Crypto</Text></TouchableOpacity></Text>
 	<Text><TouchableOpacity style={styles.tabelem}><AntDesign name="wallet" size={40} color="#1e90ff" /><Text style={{color:'#1e90ff',}}>T-Wallet</Text></TouchableOpacity></Text>
 	<Text style={{color:'#1e90ff',}}>HOME</Text>
 	<Text><TouchableOpacity style={styles.tabelem} onPress={gotocontact}><AntDesign name="contacts" size={40} color="#1e90ff" /><Text style={{color:'#1e90ff',}}>Contact</Text></TouchableOpacity></Text>
