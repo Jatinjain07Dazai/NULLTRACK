@@ -28,11 +28,11 @@ return(
 	<View style={{alignItems:'center',}}>
 		<Text style={{color:"red", fontSize:40,}}>Coordinates:</Text>
 	</View>
-	<View style={{alignItems:'row',}}>
-		<Text style={{color:"green", fontSize:30,}}>Latitude::</Text>
-	</View>
-	<View style={{alignItems:'row',}}>
+	<View style={{marginTop:20,}}>
 		<Text style={{color:"green", fontSize:30,}}>Longitude::</Text>
+	</View>
+	<View style={{marginTop:20,}}>
+		<Text style={{color:"green", fontSize:30,}}>Latitude::</Text>
 	</View>
 	</SafeAreaView>
 
