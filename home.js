@@ -60,7 +60,7 @@ return(
 	<Text><TouchableOpacity style={styles.tabelem}><AntDesign name="wallet" size={40} color="#1e90ff" /><Text style={{color:'#1e90ff',}}>T-Wallet</Text></TouchableOpacity></Text>
 	<Text style={{color:'#1e90ff',}}>HOME</Text>
 	<Text><TouchableOpacity style={styles.tabelem} onPress={gotocontact}><AntDesign name="contacts" size={40} color="#1e90ff" /><Text style={{color:'#1e90ff',}}>Contact</Text></TouchableOpacity></Text>
-	<Text><TouchableOpacity style={styles.tabelem} onPush={exit}><Ionicons name="log-out-outline" size={40} color="#1e90ff" /><Text style={{color:'#1e90ff',}}>Log Out</Text></TouchableOpacity></Text>
+	<Text><TouchableOpacity style={styles.tabelem} onPress={exit}><Ionicons name="log-out-outline" size={40} color="#1e90ff" /><Text style={{color:'#1e90ff',}}>Log Out</Text></TouchableOpacity></Text>
 	
 	</View>
 	</SafeAreaView>
