@@ -123,7 +123,7 @@ const styles= StyleSheet.create({
   },
   header:{
   	flexDirection:'row',
-  	marginLeft:25,
+  	marginLeft: 25,
   	marginTop:25,
   	},
 
