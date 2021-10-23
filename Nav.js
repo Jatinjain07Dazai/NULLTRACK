@@ -4,6 +4,7 @@ import Index from './index';
 import Closelist from './closelist';
 import Home from './home';
 import Crypto from './crypto';
+import Wallet from './wallet';
 
 
 const screens = {
@@ -45,7 +46,19 @@ const screens = {
 			position:'absolute',
 		}
 
-	}
+	},
+   
+   wallet:{
+   	screen:Wallet,
+	navigationOptions:{
+		headerTransparent:true,
+		size:40,
+		// headerLeft:()=>{null},
+		title:'',
+		position:'absolute',
+		}
+
+   }
 
 }
 	
