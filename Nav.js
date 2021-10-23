@@ -3,6 +3,8 @@ import { createAppContainer } from 'react-navigation';
 import Index from './index';
 import Closelist from './closelist';
 import Home from './home';
+import Crypto from './crypto';
+
 
 const screens = {
 	index:{
@@ -30,6 +32,17 @@ const screens = {
 		navigationOptions:{
 			headerTransparent:true,
 			title:''
+		}
+
+	},
+	cryptomrk:{
+		screen:Crypto,
+		navigationOptions:{
+			headerTransparent:true,
+			size:40,
+			// headerLeft:()=>{null},
+			title:'',
+			position:'absolute',
 		}
 
 	}
