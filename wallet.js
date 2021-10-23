@@ -28,7 +28,7 @@ return(
 	<Text>Withdraw</Text>
 	<Text> Add Money</Text>
 	<Text> Change Pin</Text>
-	<Text>Huh....</Text>
+	<Text>Request</Text>
 	</ImageBackground>
 	</SafeAreaView>
 
