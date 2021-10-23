@@ -1,8 +1,5 @@
 import React, {useState} from 'react';
 import { StyleSheet, Text, SafeAreaView, View, ImageBackground, TouchableOpacity, Dimensions, FlatList} from 'react-native';
-import { SimpleLineIcons } from '@expo/vector-icons';
-import { AntDesign } from '@expo/vector-icons';
-import { FontAwesome } from '@expo/vector-icons';
 
 //using
 import { FontAwesome5 } from '@expo/vector-icons';
