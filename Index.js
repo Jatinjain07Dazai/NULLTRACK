@@ -25,7 +25,7 @@ export default function Index({navigation})
     }
     else{
       Alert.alert('Authetication Failed', 
-        'It seems you username or password is incorrect', 
+        'It seems you username or Password is incorrect', 
         [{text:"Forget password", onPress:()=> console.log("This feature is under produnction")},
         {text:"retry", onPress:()=> console.log("okie dokie !!!!!!")}]);
     }
