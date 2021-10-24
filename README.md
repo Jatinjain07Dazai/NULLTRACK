@@ -33,3 +33,15 @@ Git repository for void hack() of svvv
 ### -> cd Tracker                    // past all files of repositoy and overwrite blank app also install all dependency mentioned in dependacy.txt
 ## 3. expo start                     // a metro handler pop up +  a cmd menu
 ## 4. download expo go app from play store and scan the code here you go :)  //Interface may vary on diffrent pixel ratio:
+
+
+# Video Privew of the app :-
+
+
+https://user-images.githubusercontent.com/72065165/138577092-c6d52c48-61f6-44f7-acff-c9e9e1c52e2b.mp4
+
+
+
+
+
+
