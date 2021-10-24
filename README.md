@@ -49,7 +49,8 @@ https://user-images.githubusercontent.com/72065165/138577092-c6d52c48-61f6-44f7-
 ## 4. download expo go app from play store and scan the code here you go :)  //Interface may vary on diffrent pixel ratio:
 
 
-
+### DEFAULT LOGIN ID :- peanut
+### DEFAULT LOGIN Password :- butter
 
 
 
